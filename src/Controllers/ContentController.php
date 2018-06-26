@@ -9,7 +9,7 @@ use Plenty\Modules\Item\DataLayer\Contracts\ItemDataLayerRepositoryContract;
 
 class ContentController extends Controller
 {
-    public function showTopItems(Twig $twig, ItemDataLayerRepositoryContract $itemRepository):string
+    public function showTopItems(Twig $twig, ItemDataLayerRepositoryContract $itemRepository)
     {
         $itemColumns = [
             'itemDescription' => [
